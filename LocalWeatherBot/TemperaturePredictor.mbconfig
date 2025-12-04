@@ -1,14 +1,271 @@
 ﻿{
-  "Scenario": "Default",
+  "Scenario": "Regression",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "C:\\Users\\derek\\source\\repos\\LocalWeatherBot\\LocalWeatherBot\\Data\\MLNET_Weather_Training.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Month_Today",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "MinTemp_Today",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "MaxTemp_Today",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "MaxTemp_Tomorrow",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
   "Environment": {
     "Type": "LocalCPU",
     "Version": 1
   },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.77854841096894778,
+        "RuntimeInSeconds": 0.533,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ],
+            "InputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfTrees": 8,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "MaxTemp_Tomorrow",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.77667764167137177,
+        "RuntimeInSeconds": 0.496,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ],
+            "InputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfTrees": 5,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "MaxTemp_Tomorrow",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.77564400705792191,
+        "RuntimeInSeconds": 2.078,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ],
+            "InputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "MaxTemp_Tomorrow",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.77564400705792191,
+        "RuntimeInSeconds": 0.525,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ],
+            "InputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "MaxTemp_Tomorrow",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.77550001375442013,
+        "RuntimeInSeconds": 0.491,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ],
+            "InputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "Month_Today",
+              "MinTemp_Today",
+              "MaxTemp_Today"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 0.8638787,
+            "LabelColumnName": "MaxTemp_Tomorrow",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "ReplaceMissingValues",
+      "e1": "Concatenate",
+      "e2": "FastTreeRegression",
+      "e3": "FastForestRegression",
+      "e4": "LightGbmRegression",
+      "e5": "LbfgsPoissonRegressionRegression",
+      "e6": "SdcaRegression"
+    },
+    "Schema": "e0 * e1 * (e2 + e3 + e4 + e5 + e6)",
+    "MetricName": "RSquared",
+    "ModelFilePath": "C:\\Users\\derek\\source\\repos\\LocalWeatherBot\\LocalWeatherBot\\TemperaturePredictor.mlnet"
+  },
   "Type": "TrainingConfig",
   "Version": 5,
   "TrainingOption": {
-    "Version": 1,
-    "Type": "DefaultTrainingOption",
-    "TrainingTime": 0
+    "Version": 2,
+    "Subsampling": false,
+    "Type": "RegressionTrainingOption",
+    "TrainingTime": 300,
+    "LabelColumn": "MaxTemp_Tomorrow",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
   }
 }
