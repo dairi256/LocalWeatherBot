@@ -13,13 +13,14 @@
             //Load sample data
             var sampleData = new TemperaturePredictor.ModelInput()
             {
-                Month_Today = 10F, // The month that we are in currently (1-12)
-                MinTemp_Today = 9.7F, // The minimum temperature recorded today
-                MaxTemp_Today = 19.4F, // The maximum temperature recorded today
+                Month_Today = 12F, // The month that we are in currently (1-12)
+                MinTemp_Today = 12F, // The minimum temperature recorded today
+                MaxTemp_Today = 24F, // The maximum temperature recorded today
             };
 
             //Load model and predict output
             var result = TemperaturePredictor.Predict(sampleData);
+            Console.WriteLine($"Predicted Max Temperature for Tomorrow: {result.Score}");
 
         }
     }
