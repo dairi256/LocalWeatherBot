@@ -12,7 +12,7 @@ This model is created using C# and intergrated within ML.NET, allowing for quick
 
 ## Setup and Installation
 As this project is not complete, please use an IDE if you wish to run this project.
-**Prerequisites:*
+**Prerequisites:**
 1. .NET Core SDK (6.0 or later reccomended)
 2. Visual Studio with .NET Desktop Enviroment installed (I have not tried out any other IDEs yet).
 
