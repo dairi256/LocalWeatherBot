@@ -8,7 +8,7 @@
     "KeepPunctuations": false,
     "AllowQuoting": false,
     "Type": "TabularFile",
-    "FilePath": "C:\\Users\\derek\\source\\repos\\LocalWeatherBot\\LocalWeatherBot\\Data\\MLNET_Weather_Training.csv",
+    "FilePath": "C:\\Users\\derek\\source\\repos\\LocalWeatherBot\\LocalWeatherBot\\Data\\WeatherMLNETTrainingData.csv",
     "Delimiter": ",",
     "DecimalMarker": ".",
     "HasHeader": true,
@@ -59,8 +59,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "FastForestRegression",
-        "Score": 0.77854841096894778,
-        "RuntimeInSeconds": 0.533,
+        "Score": 0.78092481320923413,
+        "RuntimeInSeconds": 1.222,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e3",
           "e0": {
@@ -84,8 +84,8 @@
             "OutputColumnName": "Features"
           },
           "e3": {
-            "NumberOfTrees": 8,
-            "NumberOfLeaves": 4,
+            "NumberOfTrees": 23,
+            "NumberOfLeaves": 51,
             "FeatureFraction": 1.0,
             "LabelColumnName": "MaxTemp_Tomorrow",
             "FeatureColumnName": "Features"
@@ -96,8 +96,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "FastForestRegression",
-        "Score": 0.77667764167137177,
-        "RuntimeInSeconds": 0.496,
+        "Score": 0.78085463750561923,
+        "RuntimeInSeconds": 1.07,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e3",
           "e0": {
@@ -121,8 +121,8 @@
             "OutputColumnName": "Features"
           },
           "e3": {
-            "NumberOfTrees": 5,
-            "NumberOfLeaves": 4,
+            "NumberOfTrees": 35,
+            "NumberOfLeaves": 10,
             "FeatureFraction": 1.0,
             "LabelColumnName": "MaxTemp_Tomorrow",
             "FeatureColumnName": "Features"
@@ -133,8 +133,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "FastForestRegression",
-        "Score": 0.77564400705792191,
-        "RuntimeInSeconds": 2.078,
+        "Score": 0.7804486598530368,
+        "RuntimeInSeconds": 1.223,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e3",
           "e0": {
@@ -158,8 +158,8 @@
             "OutputColumnName": "Features"
           },
           "e3": {
-            "NumberOfTrees": 4,
-            "NumberOfLeaves": 4,
+            "NumberOfTrees": 79,
+            "NumberOfLeaves": 75,
             "FeatureFraction": 1.0,
             "LabelColumnName": "MaxTemp_Tomorrow",
             "FeatureColumnName": "Features"
@@ -170,8 +170,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "FastForestRegression",
-        "Score": 0.77564400705792191,
-        "RuntimeInSeconds": 0.525,
+        "Score": 0.78043727025141185,
+        "RuntimeInSeconds": 1.244,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e3",
           "e0": {
@@ -195,9 +195,9 @@
             "OutputColumnName": "Features"
           },
           "e3": {
-            "NumberOfTrees": 4,
-            "NumberOfLeaves": 4,
-            "FeatureFraction": 1.0,
+            "NumberOfTrees": 83,
+            "NumberOfLeaves": 13,
+            "FeatureFraction": 0.9233547,
             "LabelColumnName": "MaxTemp_Tomorrow",
             "FeatureColumnName": "Features"
           }
@@ -207,8 +207,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "FastForestRegression",
-        "Score": 0.77550001375442013,
-        "RuntimeInSeconds": 0.491,
+        "Score": 0.77999647675066763,
+        "RuntimeInSeconds": 0.97,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e3",
           "e0": {
@@ -232,9 +232,9 @@
             "OutputColumnName": "Features"
           },
           "e3": {
-            "NumberOfTrees": 4,
-            "NumberOfLeaves": 4,
-            "FeatureFraction": 0.8638787,
+            "NumberOfTrees": 15,
+            "NumberOfLeaves": 238,
+            "FeatureFraction": 0.86177284,
             "LabelColumnName": "MaxTemp_Tomorrow",
             "FeatureColumnName": "Features"
           }

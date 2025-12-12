@@ -14,7 +14,7 @@ namespace LocalWeatherBot
 {
     public partial class TemperaturePredictor
     {
-        public const string RetrainFilePath =  @"C:\Users\derek\source\repos\LocalWeatherBot\LocalWeatherBot\Data\MLNET_Weather_Training.csv";
+        public const string RetrainFilePath =  @"C:\Users\derek\source\repos\LocalWeatherBot\LocalWeatherBot\Data\WeatherMLNETTrainingData.csv";
         public const char RetrainSeparatorChar = ',';
         public const bool RetrainHasHeader =  true;
         public const bool RetrainAllowQuoting =  false;
@@ -92,7 +92,7 @@ namespace LocalWeatherBot
             // Data process configuration with pipeline data transformations
             var pipeline = mlContext.Transforms.ReplaceMissingValues(new []{new InputOutputColumnPair(@"Month_Today", @"Month_Today"),new InputOutputColumnPair(@"MinTemp_Today", @"MinTemp_Today"),new InputOutputColumnPair(@"MaxTemp_Today", @"MaxTemp_Today")})      
                                     .Append(mlContext.Transforms.Concatenate(@"Features", new []{@"Month_Today",@"MinTemp_Today",@"MaxTemp_Today"}))      
-                                    .Append(mlContext.Regression.Trainers.FastForest(new FastForestRegressionTrainer.Options(){NumberOfTrees=8,NumberOfLeaves=4,FeatureFraction=1F,LabelColumnName=@"MaxTemp_Tomorrow",FeatureColumnName=@"Features"}));
+                                    .Append(mlContext.Regression.Trainers.FastForest(new FastForestRegressionTrainer.Options(){NumberOfTrees=23,NumberOfLeaves=51,FeatureFraction=1F,LabelColumnName=@"MaxTemp_Tomorrow",FeatureColumnName=@"Features"}));
 
             return pipeline;
         }
