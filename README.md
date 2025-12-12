@@ -7,7 +7,7 @@ This model is created using C# and intergrated within ML.NET, allowing for quick
 **Prediction Analysis:** This model is used to preidct the Maximum Temperature in Celcius(C) for the next day. As this predicts only the next day, I must figure out a way to automate this process.
 
 ## Model Performance
-* **R-Squared:** This model measured as a 0.7785, meaning that it is around 78% correct in close predictions most of the time.
+* **R-Squared:** This model measured as a 0.7809, meaning that it is around 78% correct in close predictions most of the time.
 * **Status:** In development.
 
 ## Setup and Installation
