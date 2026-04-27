@@ -1,5 +1,5 @@
 # LocalWeatherBot
-**Dislcaimer:** The training data available currently may be out of date. I will try my best to rectify this issue as this project continues.
+**Dislcaimer:** The training data may be out of date, leading to inacurate forecasting results. I will try my best to rectify this issue as this project continues.
 
 ## Overview and Features
 This model is created using C# and intergrated within ML.NET, allowing for quick and easy training. This specific model is built using the Value Prediction model. It has also been trained on 24 years worth of data.
